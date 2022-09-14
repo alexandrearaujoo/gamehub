@@ -1,8 +1,8 @@
-import { Router } from "express";
-import AdsController from "../controllers/ads.controller";
+import { Express } from "express";
+import { adsRouter } from "./ads.routes";
+import { gamesRouter } from "./games.routes";
 
-const router = Router();
-
-router.get("", AdsController.index);
-
-export default router;
+export const appRoutes = (app: Express) => {
+  app.use("/ads", adsRouter());
+  app.use("/games", gamesRouter());
+};
