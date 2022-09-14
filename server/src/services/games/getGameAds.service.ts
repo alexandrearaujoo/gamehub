@@ -1,5 +1,4 @@
 import { PrismaClient } from "@prisma/client";
-import { convertHourStringToMinutes } from "../../utils/convertHourStringToMinutes";
 import { convertMinutesToHour } from "../../utils/convertMinutesToHours";
 
 const prisma = new PrismaClient();

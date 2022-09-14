@@ -5,7 +5,7 @@ const prisma = new PrismaClient();
 
 interface AdProps {
   name: string;
-  yearsPlaying: string;
+  yearsPlaying: number;
   discord: string;
   weekDays: number[];
   hourStart: string;
